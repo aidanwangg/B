@@ -1,14 +1,12 @@
 """Tests"""
 
 import pytest
-from block import Block
+from blocks.block import Block
 from state import _block_to_squares
 from goal import BlobGoal, PerimeterGoal, flatten, generate_goals
 from player import _get_block, HumanPlayer, SmartPlayer, RandomPlayer, create_players
 from settings import COLOUR_LIST
-from actions import Action, KEY_ACTION, ROTATE_CLOCKWISE, \
-    ROTATE_COUNTER_CLOCKWISE, \
-    SWAP_HORIZONTAL, SWAP_VERTICAL, SMASH, PASS, PAINT, COMBINE
+from blocks.actions import Action
 
 
 def set_children(block: Block, colours: list[tuple[int, int, int]] | None) \

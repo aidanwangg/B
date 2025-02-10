@@ -3,11 +3,11 @@
 from __future__ import annotations
 import pygame
 
-from actions import Action
-from block import Block, _block_to_squares
-from player import Player
-from renderer import Renderer
-from settings import ANIMATION_DURATION
+from blocks.actions import Action
+from blocks.block import Block, _block_to_squares
+from blocks.player import Player
+from blocks.renderer import Renderer
+from blocks.settings import ANIMATION_DURATION
 
 
 class GameData:

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 import random
-from block import Block
+from blocks.block import Block
 from settings import colour_name, COLOUR_LIST
 
 

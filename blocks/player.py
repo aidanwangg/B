@@ -4,10 +4,10 @@ from __future__ import annotations
 import random
 import pygame
 
-from block import Block
-from goal import Goal, generate_goals
+from blocks.block import Block
+from blocks.goal import Goal, generate_goals
 
-from actions import Action, KEY_ACTION, ROTATE_CLOCKWISE, \
+from blocks.actions import Action, KEY_ACTION, ROTATE_CLOCKWISE, \
     ROTATE_COUNTER_CLOCKWISE, \
     SWAP_HORIZONTAL, SWAP_VERTICAL, SMASH, PASS, PAINT, COMBINE
 

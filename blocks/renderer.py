@@ -2,7 +2,7 @@
 
 import pygame
 
-from actions import Action, KEY_ACTION
+from blocks.actions import Action, KEY_ACTION
 from settings import BACKGROUND_COLOUR, TEXT_COLOUR, OUTLINE_THICKNESS, \
     OUTLINE_COLOUR, HIGHLIGHT_THICKNESS, HIGHLIGHT_COLOUR, COLOUR_LIST, \
     colour_name
@@ -144,7 +144,7 @@ class Renderer:
 
         self._images = {}
         for action in KEY_ACTION.values():
-            self._images[action.short_name] = _load_image(f'images/'
+            self._images[action.short_name] = _load_image(f'../images/'
                                                           f'{action.short_name}'
                                                           f'.png')
 
@@ -163,7 +163,7 @@ class Renderer:
         """
 
         # just load the image each time?
-        image = _load_image(f'images/{action.short_name}.png')
+        image = _load_image(f'../images/{action.short_name}.png')
         image = pygame.transform.scale(image, (size, size))
         self._screen.blit(image, pos)
 

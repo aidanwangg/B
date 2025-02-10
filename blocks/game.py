@@ -2,7 +2,7 @@
 
 import pygame
 
-from block import generate_board
+from blocks.block import generate_board
 from state import GameData, GameState, MainState
 from player import create_players
 from renderer import Renderer
